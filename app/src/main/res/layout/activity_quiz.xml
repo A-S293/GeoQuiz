@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.bignerdranch.android.myapplication.QuizActivity">
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.bignerdranch.android.myapplication.QuizActivity"
+    android:weightSum="1">
+
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_weight="0.02"
         android:text="Constantinople is the largest city in Turkey."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -17,8 +22,8 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:layout_width="178dp"
-        android:layout_height="61dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
         tools:layout_editor_absoluteX="91dp"
         tools:layout_editor_absoluteY="280dp">
@@ -27,25 +32,16 @@
             android:id="@+id/true_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="0.68"
             android:text="TRUE" />
 
         <Button
             android:id="@+id/false_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_weight="0.65"
             android:text="FALSE" />
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="336dp"
-        android:layout_height="493dp"
-        android:orientation="vertical"
-        android:weightSum="1"
-        tools:layout_editor_absoluteX="12dp"
-        tools:layout_editor_absoluteY="9dp">
 
-    </LinearLayout>
-
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
