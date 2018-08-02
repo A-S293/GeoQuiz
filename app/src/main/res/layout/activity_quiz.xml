@@ -7,21 +7,36 @@
     tools:context="com.bignerdranch.android.myapplication.QuizActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Constantinople is the largest city in Turkey."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:id="@+id/textView" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
         android:layout_width="178dp"
         android:layout_height="61dp"
         android:orientation="horizontal"
         tools:layout_editor_absoluteX="91dp"
-        tools:layout_editor_absoluteY="280dp"></LinearLayout>
+        tools:layout_editor_absoluteY="280dp">
+
+        <Button
+            android:id="@+id/true_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TRUE" />
+
+        <Button
+            android:id="@+id/false_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="FALSE" />
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="336dp"
