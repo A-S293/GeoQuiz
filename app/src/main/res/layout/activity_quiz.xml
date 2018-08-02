@@ -15,7 +15,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="0.02"
-        android:text="Constantinople is the largest city in Turkey."
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -42,6 +41,13 @@
             android:layout_weight="0.65"
             android:text="FALSE" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.04"
+        android:text="@string/next_button" />
 
 
 </LinearLayout>
