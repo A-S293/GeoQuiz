@@ -27,6 +27,9 @@ public class QuizActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if (savedInstanceState !=null) {
+            mCurrentIndex = savedInstanceState.getInt("index", 0);
+        }
         setContentView(R.layout.activity_quiz);
 
         mQuestionTextView = (TextView) findViewById(R.id.question_text_view);
@@ -56,6 +59,12 @@ public class QuizActivity extends AppCompatActivity {
         });
 
         updateQuestion();
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        super. onSaveInstanceState(savedInstanceState);
+        savedInstanceState.putInt("index", mCurrentIndex);
     }
 
     private void updateQuestion() {
